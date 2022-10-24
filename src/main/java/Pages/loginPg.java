@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Base.GuruBase;
+import Utility.DataFromExcel;
 import Utility.PropertyFile;
 
 public class loginPg extends GuruBase {
@@ -25,9 +26,15 @@ public class loginPg extends GuruBase {
 	
 	public void loggingIn() throws Exception
 	{
-		userId.sendKeys(PropertyFile.readPropertyFile("username"));
-		password.sendKeys(PropertyFile.readPropertyFile("password"));
+		//*****through property file*****//
+//		userId.sendKeys(PropertyFile.readPropertyFile("username"));
+//		password.sendKeys(PropertyFile.readPropertyFile("password"));
+
+		//******through excel file******//
+		userId.sendKeys(DataFromExcel.excelData(1, 1));
+		password.sendKeys(DataFromExcel.excelData(1, 2));
 		loginButton.click();
+		
 	}
 	
 	

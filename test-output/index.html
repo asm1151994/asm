@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1802770464\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1270216394\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.loginPgTC" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.loginPgTC" class="method navigator-link" hash-for-method="verifyLoggingIn">verifyLoggingIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,17 +127,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTitle">
-                  </a> <!-- verifyTitle -->
-                  <span class="method-name">verifyTitle</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Guru99 Bank Home Pag] but found [Guru99 Bank Home Page]
+                  <a name="verifyLoggingIn">
+                  </a> <!-- verifyLoggingIn -->
+                  <span class="method-name">verifyLoggingIn</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Guru99 Bank Manager HomePagee] but found [Guru99 Bank Manager HomePage]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at TestCases.loginPgTC.verifyTitle(loginPgTC.java:30)
+	at TestCases.loginPgTC.verifyLoggingIn(loginPgTC.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,7 +175,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1802770464\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1270216394\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,7 +186,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.loginPgTC&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyTitle&quot;/&gt;
+          &lt;include name=&quot;verifyLoggingIn&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.loginPgTC --&gt;
     &lt;/classes&gt;
@@ -230,14 +230,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyTitle')
+data.setCell(0, 1, 'verifyLoggingIn')
 data.setCell(0, 2, 'TestCases.loginPgTC')
-data.setCell(0, 3, 47);
+data.setCell(0, 3, 7022);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -258,7 +258,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.loginPgTC</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyLoggingIn</span>
+                <span class="ignored-method-name">verifyTitle</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -278,13 +278,9 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyTitle</span>
-                <span class="method-start">20313 ms</span>
+                <span class="method-name">verifyLoggingIn</span>
+                <span class="method-start">10430 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close([TestResult name=verifyTitle status=FAILURE method=loginPgTC.verifyTitle()[pri:0, instance:TestCases...)</span>
-                <span class="method-start">20419 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

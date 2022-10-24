@@ -5,9 +5,8 @@
     <classes>
       <class name="TestCases.loginPgTC">
         <methods>
+          <include name="verifyLoggingIn"/>
           <include name="setup"/>
-          <include name="verifyTitle"/>
-          <include name="close"/>
         </methods>
       </class> <!-- TestCases.loginPgTC -->
     </classes>
